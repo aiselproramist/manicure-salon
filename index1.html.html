@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Blossom | Маникюрный салон</title>
+    <style>
+        /* Нежно-розовая цветовая палитра */
+        :root {
+            --soft-pink: #fce4ec;
+            --main-pink: #f8bbd0;
+            --dark-pink: #f06292;
+            --text-color: #5d4037;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--soft-pink);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--white);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 3px solid var(--main-pink);
+        }
+
+        h1 { margin: 0; color: var(--dark-pink); letter-spacing: 2px; }
+
+        .hero {
+            padding: 4rem 1rem;
+            text-align: center;
+            background: linear-gradient(rgba(252, 228, 236, 0.8), rgba(252, 228, 236, 0.8)), 
+                        url('https://images.unsplash.com');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 2rem;
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 15px;
+            width: 250px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .card:hover { transform: translateY(-10px); }
+
+        .btn {
+            display: inline-block;
+            background: var(--dark-pink);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: var(--main-pink);
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PINK BLOSSOM</h1>
+        <p>Искусство красоты на ваших кончиках пальцев</p>
+    </header>
+
+    <section class="hero">
+        <h2>Позвольте себе сиять</h2>
+        <p>Лучшие мастера и премиальные материалы в уютной атмосфере</p>
+        <a href="#" class="btn">Записаться онлайн</a>
+    </section>
+
+    <div class="services">
+        <div class="card">
+            <h3>Маникюр</h3>
+            <p>Классический, аппаратный, комбинированный</p>
+            <p><strong>от 1200 ₽</strong></p>
+        </div>
+        <div class="card">
+            <h3>Покрытие</h3>
+            <p>Гель-лак, лечебное покрытие, укрепление</p>
+            <p><strong>от 800 ₽</strong></p>
+        </div>
+        <div class="card">
+            <h3>Дизайн</h3>
+            <p>Френч, роспись, втирка, стразы</p>
+            <p><strong>от 200 ₽</strong></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pink Blossom Studio. Ул. Приятная, 15</p>
+    </footer>
+
+</body>
+</html>
